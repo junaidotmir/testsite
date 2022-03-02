@@ -6,7 +6,6 @@ font-family: 'Roboto', sans-serif;*/
     margin: 0;
     padding: 0;
 }
-
 body {
     background-image: url(./images/pattern-bg.png);
     background-color: #012c1f;
@@ -24,23 +23,25 @@ header .top-bar-notification {
     align-items: center;
     padding: 20px 15px;
 } 
-
 .top-bar-notification p {
     display: flex;
     justify-content: center;
     width: 100%;
 }
-
 .top-bar-notification a {
     color: #32874e;
 }
-
 .top-bar-notification button {
-    background-color: #32874e;
+    background-color: #08512d;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     margin: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.top-bar-notification button:hover {
+    background-color: #32874e;
 }
 
 /* utility nav */
@@ -49,39 +50,40 @@ header .top-bar-notification {
     justify-content: space-between;
     align-items: center;
     padding: 10px 165px;
-    
 }
-
+.utility-nav .logo-burger {
+    cursor: pointer;
+}
 .utility-nav .logo-burger .burger {
     padding: 0;
     height: 20px;
     width: 25px;
 }
-
 .utility-nav .logo-burger .burger {
     display: none;   
 }
-
 .utility-nav button {
     width: 150px;
     margin: 0;
     transform: skew(-17deg);
     color: #fff;
 }
-
 .utility-nav .buttons p {
     transform: skew(17deg);
 }
-
 .utility-nav .buttons .membership {
     background-image: url(./images/pattern-bg.png);
-    background-color: #32874e;
-    
 }
-
 .utility-nav .buttons .account {
     background-image: url(./images/pattern-bg.png);
+}
+.utility-nav .buttons .membership, .utility-nav .buttons .account {
     background-color: #08512d;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.utility-nav .buttons .membership:hover, .utility-nav .buttons .account:hover {
+    background-color: #32874e;
 }
 
 /* secondary nav */
@@ -93,7 +95,6 @@ header .top-bar-notification {
     justify-content: space-between;
     align-items: center;
 }
-
 .secondary-nav nav ul {
     list-style-type: none;
     display: flex;
@@ -106,7 +107,6 @@ header .top-bar-notification {
     text-align: center;
     display: block;
 }
-
 .secondary-nav nav li a {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -116,13 +116,11 @@ header .top-bar-notification {
     padding: 20px 22px;
     transform: skewx(17deg);
 }
-
 .secondary-nav nav li.active,
 .secondary-nav nav li:hover {
     background-image: url(./images/pattern-bg.png);
     background-color: #1b7d3b;
 }
-
 .secondary-nav form .search{
     background-image: url(./images/pattern-bg.png);
     background-color: #012c1f;
@@ -144,7 +142,6 @@ header .top-bar-notification {
     justify-content: space-between; 
     height: 100%;
 }
-
 .title-section .title {
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
@@ -155,7 +152,6 @@ header .top-bar-notification {
     padding: 15px 10px;
     padding-left: 165px;
 }
-
 .title-section .partnership-logo {
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
@@ -170,6 +166,9 @@ header .top-bar-notification {
     padding: 0 50px;
     height: 60px;
     padding-right: 240px;
+}
+.title-section .partnership-logo img {
+    cursor: pointer;
 }
 
 /* hero section */
