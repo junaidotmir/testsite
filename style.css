@@ -763,7 +763,7 @@ button {
         display: none;
     }
     .secondary-nav nav ul li {
-        /transform: skewx(0deg);
+        transform: skewx(0deg);
     }
     .title-section {
         display: none;
